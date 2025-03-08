@@ -1,0 +1,121 @@
+body {
+  background: url(celine.jpg);
+  /*background: linear-gradient(10deg, #ff4757, #1e90ff, #ff7612); */
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+ justify-content: center;
+ align-items: center;
+ display:center;
+ margin-top: 10;
+ margin-left: 20px;
+} 
+.glass {
+  margin-bottom: 20px;
+  perspective: 10px;
+  background: rgba(255, 255, 255, 0.1);  
+ border-radius: 15px;
+ padding: 40px;
+ width: 300px;
+ text-align: center;
+ backdrop-filter: blur(10px); 
+ border: 2px solid rgba(255, 255, 255, 0.2);
+ box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+ color: #fff;
+ font-family: 'Arial', sans-serif;
+ transition: all 0.6s ease; 
+ transform-style: preserve-3d;
+}
+
+  
+.glass:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 1), 0 0 20px rgba(255, 255, 255, 1);
+    animation: pulse 1.5s  1 ease-in-out ;
+    border-radius: 20px;
+  }
+  
+@keyframes pulse {
+  0% {
+    transform: scale(0.9) rotateY(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(0.8) rotateY(180deg);
+    opacity: 0.8;
+    }
+  100% {
+    transform: scale(1) rotateY(360deg);
+    opacity: 1;
+  }
+}
+
+.hoverr {
+  height: 250px;
+  margin-bottom: 20px;
+  perspective: 10px;
+  background: rgba(255, 255, 255, 0.1);  /* Semi-transparent background */
+ border-radius: 15px;
+ padding: 40px;
+ width: 300px;
+ text-align: center;
+  backdrop-filter: blur(10px);  
+ border: 2px solid rgba(255, 255, 255, 0.2); 
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+color: #fff;
+font-family: 'Arial', sans-serif;
+transition: all 0.6s ease; 
+transform-style: preserve-3d;
+}
+
+.hoverr:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 1), 0 0 20px rgba(255, 255, 255, 1);
+    animation: hover 1.5s  1 ease-in-out ;
+    border-radius: 20px;
+  }
+  
+@keyframes hover {
+  0% {
+    transform: scale(0.9) rotateY(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(0.8) rotateY(180deg);
+    opacity: 0.8;
+    }
+  100% {
+    transform: scale(1) rotateY(360deg);
+    opacity: 1;
+  }
+}
+
+  h1 {
+    font-size: 24px;
+  }
+
+  p {
+     font-size: 16px;
+  }
+  
+  hr {
+    width: 300px;
+    height: 1px;
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(255,255,255);
+  }
+  
+  .lovely {
+    margin-bottom: 1px;
+    width: 50px;
+    height: 25px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    float: left ;
+    font-weight: bold;
+  }
